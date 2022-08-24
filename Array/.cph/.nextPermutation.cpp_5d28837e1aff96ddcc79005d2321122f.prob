@@ -1,0 +1,1 @@
+{"name":"Local: nextPermutation","url":"c:\\Users\\hp\\program\\DSA\\Array\\nextPermutation.cpp","tests":[{"id":1660225027957,"input":"3\n1 2 3","output":"132"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hp\\program\\DSA\\Array\\nextPermutation.cpp","group":"local","local":true}

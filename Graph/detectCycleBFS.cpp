@@ -4,14 +4,14 @@ using namespace std;
 
     bool checkForCycle(int s, int V, vector<int> adj[], vector<int> &visited)
     {
-        // Create a queue for BFS
+        // Create <source,parent>
         queue<pair<int, int>> q;
         visited[s] = true;
         q.push({s, -1});
         while (!q.empty())
         {
             int node = q.front().first;
-            int par = q.front().second;
+            int parent = q.front().second;
             q.pop();
  
             for (auto it : adj[node])
@@ -21,7 +21,7 @@ using namespace std;
                     visited[it] = true;
                     q.push({it, node});
                 }
-                else if (par != it)
+                else if (parent != it)
                     return true;
             }
         }

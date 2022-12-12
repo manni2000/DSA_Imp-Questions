@@ -1,5 +1,8 @@
-class Solution {
-public:
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
     ListNode* reverseList(ListNode* head) {
         
         struct ListNode *prev, *curr, *next;
@@ -16,4 +19,4 @@ public:
         head = prev;
         return head;
     }
-};
+}

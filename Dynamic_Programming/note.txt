@@ -1,0 +1,11 @@
+#DP NOTES
+Tabulation -> Bottom-up
+
+Memorization -> Top-Down
+-tend to store the value of sub problem in some map|table.
+
+tricks to dp problem.
+-Try to represent the problem in terms od index.
+-Do all possible stuffs on that and in all to the problem statement.
+-sum of all stuffs -> count always
+-min of all stuffs -> Find min.

@@ -3,7 +3,7 @@
 class Solution {
 public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
-        vector<int> r;
+        vector<int> ans;
         for(int i = 0; i < nums1.size(); i++) {
             for(int j = 0; j < nums2.size(); j++) {
                 if(nums1[i] == nums2[j]) {
@@ -18,15 +18,15 @@ public:
                    } 
                     
                    if(flag) {
-                       r.push_back(nextGreaterElement);
+                       ans.push_back(nextGreaterElement);
                    } else {
-                       r.push_back(-1);
+                       ans.push_back(-1);
                    }
                     
                 }
             }
         }
-        return r;
+        return ans;
     }
 };
  
